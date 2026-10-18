@@ -1,0 +1,10 @@
+{
+	"name": "LS_ADLS_",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://azsgaccountdemo.dfs.core.windows.net/"
+		}
+	}
+}
