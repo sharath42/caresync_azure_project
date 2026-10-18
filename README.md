@@ -70,7 +70,7 @@ PySpark · PostgreSQL · GitHub
 
 <p align="center">
   <img src="assets/narender-photo.png" width="110" alt="Sharath Gourishetty"><br>
-  <strong>Narender Kumar</strong>
+  <strong>Sharath Gourishetty</strong>
 </p>
 
 <p align="center">
