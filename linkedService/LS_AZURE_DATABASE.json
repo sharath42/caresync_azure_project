@@ -1,0 +1,23 @@
+{
+	"name": "LS_AZURE_DATABASE",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "sqlserver-free-2026.database.windows.net",
+			"database": "free-sql-db-7130052",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "sqladmin",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_KEY_VAULT",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "Azure-db-password"
+			}
+		}
+	}
+}
