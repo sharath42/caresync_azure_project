@@ -20,6 +20,18 @@
 		"LS_KEY_VAULT_properties_typeProperties_baseUrl": {
 			"value": "https://key-vault-project.vault.azure.net/"
 		},
+		"LS_POSTGRES_properties_typeProperties_server": {
+			"value": "ep-rough-cherry-b5jg3jus-pooler.c-7.us-east-2.aws.neon.tech"
+		},
+		"LS_POSTGRES_properties_typeProperties_database": {
+			"value": "neondb"
+		},
+		"LS_POSTGRES_properties_typeProperties_username": {
+			"value": "neondb_owner"
+		},
+		"LS_AzureDatabricks_properties_typeProperties_existingClusterId": {
+			"value": "1019-174944-dp93y4yq"
+		},
 		"containerUri": {
 			"value": ""
 		},
