@@ -17,6 +17,9 @@
 		"LS_AZURE_DATABASE_properties_typeProperties_userName": {
 			"value": "sqladmin"
 		},
+		"LS_AzureDatabricks_properties_typeProperties_existingClusterId": {
+			"value": "1019-174944-dp93y4yq"
+		},
 		"LS_KEY_VAULT_properties_typeProperties_baseUrl": {
 			"value": "https://key-vault-project.vault.azure.net/"
 		},
@@ -28,9 +31,6 @@
 		},
 		"LS_POSTGRES_properties_typeProperties_username": {
 			"value": "neondb_owner"
-		},
-		"LS_AzureDatabricks_properties_typeProperties_existingClusterId": {
-			"value": "1019-174944-dp93y4yq"
 		},
 		"containerUri": {
 			"value": ""
