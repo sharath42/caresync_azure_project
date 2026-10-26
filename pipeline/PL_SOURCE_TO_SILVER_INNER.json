@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Read Table Details",
+				"name": "Read Table Detail",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -53,7 +53,7 @@
 				"type": "Copy",
 				"dependsOn": [
 					{
-						"activity": "Read Table Details",
+						"activity": "Read Table Detail",
 						"dependencyConditions": [
 							"Succeeded"
 						]
