@@ -77,7 +77,7 @@
 					"source": {
 						"type": "PostgreSqlV2Source",
 						"query": {
-							"value": "Select * from PUBLIC.@{activity('Read Table Details').output.firstRow.source_table_name}",
+							"value": "Select * from PUBLIC.@{activity('Read Table Detail').output.firstRow.source_table_name}",
 							"type": "Expression"
 						},
 						"queryTimeout": "02:00:00"
