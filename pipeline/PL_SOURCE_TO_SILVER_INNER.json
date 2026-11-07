@@ -43,7 +43,7 @@
 				"typeProperties": {
 					"variableName": "start_time",
 					"value": {
-						"value": "@formatDateTime(utcNow(),'yyyy-MM-ddThh:mm:ss')",
+						"value": "@convertFromUtc(utcNow(),'Indian Standard Time','yyyy-MM-ddThh:mm:ss')",
 						"type": "Expression"
 					}
 				}
@@ -92,6 +92,20 @@
 						}
 					},
 					"enableStaging": false,
+					"enableSkipIncompatibleRow": true,
+					"logSettings": {
+						"enableCopyActivityLog": true,
+						"copyActivityLogSettings": {
+							"logLevel": "Warning",
+							"enableReliableLogging": false
+						},
+						"logLocationSettings": {
+							"linkedServiceName": {
+								"referenceName": "LS_ADLS_",
+								"type": "LinkedServiceReference"
+							}
+						}
+					},
 					"translator": {
 						"type": "TabularTranslator",
 						"typeConversion": true,
@@ -144,11 +158,11 @@
 					"notebookPath": "/caresync-repo/caresync-adb-repo/Landing_to_bronze",
 					"baseParameters": {
 						"system_source": {
-							"value": "@activity('Read Table Details').output.firstRow.source_system",
+							"value": "@activity('Read Table Detail').output.firstRow.source_system",
 							"type": "Expression"
 						},
 						"table_name": {
-							"value": "@activity('Read Table Details').output.firstRow.bronze_table_name",
+							"value": "@activity('Read Table Detail').output.firstRow.bronze_table_name",
 							"type": "Expression"
 						},
 						"landing_timestamp": {
@@ -185,7 +199,7 @@
 					"notebookPath": "/caresync-repo/caresync-adb-repo/bronze_to_silver",
 					"baseParameters": {
 						"table_name": {
-							"value": "@activity('Read Table Details').output.firstRow.silver_table_name",
+							"value": "@activity('Read Table Detail').output.firstRow.silver_table_name",
 							"type": "Expression"
 						},
 						"landing_timestamp": {
