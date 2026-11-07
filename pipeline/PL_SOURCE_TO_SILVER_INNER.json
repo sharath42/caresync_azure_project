@@ -113,7 +113,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"folder": {
-								"value": "@concat(\n    activity('Read Table Details').output.firstRow.source_system,'/',\n    activity('Read Table Details').output.firstRow.source_table_name,\n    '/',\n    variables('start_time')\n)",
+								"value": "@concat(\n    activity('Read Table Detail').output.firstRow.source_system,'/',\n    activity('Read Table Detail').output.firstRow.source_table_name,\n    '/',\n    variables('start_time')\n)",
 								"type": "Expression"
 							},
 							"main_folder": "landing"
